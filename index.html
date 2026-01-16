@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Ruta - Proceso Cinematográfico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#FF4D00',
+                        dark: '#000000',
+                    },
+                    fontFamily: {
+                        mono: ['IBM Plex Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script>
+        theme: {
+            extend: {
+                colors: {
+                    'accent': '#FF4D00', // Groshev Orange
+                        'dark': '#000000',
+                    },
+                fontFamily: {
+                    'sans': ['Inter', 'sans-serif'],
+                        'mono': ['IBM Plex Mono', 'monospace'],
+                    },
+                fontSize: {
+                    'xxs': '0.6rem',
+                    }
+            },
+        },
+        };
+    </script>
+    <style>
+        body {
+            background-color: #000000;
+            color: #FF3300;
+            font-family: 'IBM Plex Mono', monospace;
+            text-transform: uppercase;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .monospaced-metadata {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 10px;
+            letter-spacing: 0.1em;
+        }
+
+        /* Groshev style: Selection is white text on orange background */
+        ::selection {
+            background: #FF3300;
+            color: #000000;
+        }
+
+        .stroke-text {
+            -webkit-text-stroke: 1px #FF3300;
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body class="font-sans selection:bg-accent pb-12 md:pb-32" onload="loadRefs()">
+
+    <!-- Navigation -->
+    <!-- Navigation removed as requested -->
+
+    <!-- New Typographic Hero Section -->
+    <section class="relative w-full min-h-[80vh] flex flex-col justify-end px-4 md:px-8 pb-32">
+        <div class="max-w-7xl mx-auto w-full relative">
+
+            <div class="flex flex-col gap-8 md:gap-12">
+                <!-- Top Meta (Hidden on Mobile) -->
+                <div class="hidden md:flex justify-between items-start text-xs text-accent/70">
+                    <div class="space-y-1">
+                        <p>PORTAL DEL CLIENTE</p>
+                        <p>ESTADO: INICIADO</p>
+                    </div>
+                    <div class="text-right space-y-1">
+                        <p>CÓDIGO: BS-2026-X1</p>
+                        <p>UBICACIÓN: SANTO DOMINGO</p>
+                    </div>
+                </div>
+
+                <!-- Main Title -->
+                <h1
+                    class="text-[13vw] md:text-[clamp(3rem,14vw,12rem)] font-bold leading-[0.8] tracking-tighter text-accent mix-blend-screen -ml-1">
+                    BERENJENA<br>STUDIO
+                </h1>
+
+                <!-- Progress & Call to Action -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 border-t border-accent pt-6 mt-4 md:mt-12 items-end">
+                    <!-- Button: Full Width Block on Mobile -->
+                    <div
+                        class="md:col-span-6 md:col-start-8 md:row-start-1 md:text-right order-first md:order-last w-full">
+                        <a href="https://berenjenastudio.com" target="_blank"
+                            class="block w-full text-center md:inline-block md:w-auto text-[10px] bg-accent text-black font-bold uppercase tracking-widest px-6 py-4 md:py-2 hover:bg-white transition-colors duration-300">
+                            [ VER WEBSITE EN VIVO ]
+                        </a>
+                    </div>
+
+                    <div class="md:col-span-3">
+                        <p class="text-[10px] mb-2 text-accent/70 uppercase tracking-wider">PROCESO DE COMPLETADO</p>
+                        <p class="text-[25vw] md:text-[8rem] leading-[0.8] font-bold tracking-tighter text-accent">
+                            15<span class="text-xl md:text-4xl align-top">%</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connective Thread Line -->
+    <div class="fixed left-8 top-0 bottom-0 w-[1px] bg-zinc-900 z-0 hidden md:block"></div>
+
+    <!-- Connective Grid Line -->
+    <div class="max-w-7xl mx-auto w-full h-[1px] bg-accent/30 mb-20"></div>
+
+    <!-- Live Feed / Action Queue -->
+    <section class="max-w-7xl mx-auto mb-40 px-4 md:px-8">
+        <div class="grid md:grid-cols-2 gap-16 md:gap-32">
+
+            <!-- Column 1: Doing -->
+            <div class="space-y-8">
+                <h3 class="text-xs font-bold text-accent mb-8 flex items-center gap-2">
+                    <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+                    [ LOG: EN PROCESO ]
+                </h3>
+                <ul class="space-y-12">
+                    <li class="group">
+                        <p class="text-3xl md:text-4xl font-bold text-accent mb-2">DISEÑO DE CONCEPTO</p>
+                        <p class="text-[10px] md:text-xs text-accent/70 leading-relaxed max-w-sm">
+                            Dirección de arte. Narrativa visual. Moodboards de alto impacto. Ejecución técnica inicial.
+                        </p>
+                    </li>
+                    <li class="group">
+                        <p class="text-3xl md:text-4xl font-bold text-accent/40 mb-2">CONFIGURACIÓN TÉCNICA</p>
+                        <p class="text-[10px] md:text-xs text-accent/40 leading-relaxed max-w-sm">
+                            Repositorio Git. Entorno Dev. Dependencias Core.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 2: Needed -->
+            <div class="space-y-8">
+                <h3 class="text-xs font-bold text-accent mb-8 border-b border-accent/20 pb-2">
+                    [ LOG: REQUERIDO ]
+                </h3>
+                <div class="space-y-2">
+                    <p class="text-[10px] text-accent/60">ESPERANDO INPUT</p>
+                    <p class="text-xl md:text-2xl font-bold text-accent leading-tight">
+                        MANUAL DE MARCA &<br>ACTIVOS GRÁFICOS
+                    </p>
+                    <a href="mailto:project@berenjenastudio.com?subject=BS-2026-X1%20Assets"
+                        class="inline-block mt-6 text-[10px] border border-accent px-4 py-2 hover:bg-accent hover:text-black transition-colors">
+                        // ENVIAR ARCHIVOS
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Visual Targets -->
+    <section class="max-w-7xl mx-auto mb-40 px-4 md:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-8 gap-8 border-b border-accent/20 pb-4">
+            <h3 class="text-xs font-bold text-accent">[ VISUAL TARGETS - REFERENCIAS ]</h3>
+
+            <label class="cursor-pointer text-[10px] hover:bg-accent hover:text-black px-3 py-1 transition-colors">
+                <input type="file" id="ref-uploader" accept="image/*" multiple class="hidden"
+                    onchange="handleImageUpload(event)">
+                [ + UPLOAD ]
+            </label>
+        </div>
+
+        <div id="visual-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <!-- Dynamic Content -->
+            <div id="empty-state" class="col-span-full border border-accent/20 border-dashed p-12 text-center">
+                <p class="text-[10px] text-accent/50">NO DATA</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // CMS Logic for Visual Targets
+        const STORAGE_KEY = 'bs_visual_refs_v1';
+
+        function loadRefs() {
+            const grid = document.getElementById('visual-grid');
+            const emptyState = document.getElementById('empty-state');
+            const storedData = localStorage.getItem(STORAGE_KEY);
+
+            // Clear current grid except empty state
+            // Note: In a real component framework this is easier. Here we just rebuild.
+            // Remove all image containers (those without id empty-state)
+            Array.from(grid.children).forEach(child => {
+                if (child.id !== 'empty-state') child.remove();
+            });
+
+            if (!storedData) {
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            const images = JSON.parse(storedData);
+            if (images.length === 0) {
+                emptyState.classList.remove('hidden');
+            } else {
+                emptyState.classList.add('hidden');
+                // Create document fragment for performance
+                const frag = document.createDocumentFragment();
+                images.forEach((imgData, index) => {
+                    const div = document.createElement('div');
+                    div.className = 'aspect-video relative group overflow-hidden bg-zinc-900 border border-zinc-800';
+                    div.innerHTML = `
+                        <img src="${imgData}" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105">
+                        <div class="absolute inset-0 border border-white/0 group-hover:border-white/20 transition-colors pointer-events-none"></div>
+                        <div class="absolute bottom-0 left-0 bg-black/80 px-3 py-1 backdrop-blur-sm transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <p class="monospaced-metadata text-[8px] text-white">REF_0${index + 1}</p>
+                        </div>
+                        <button onclick="removeRef(${index})" class="absolute top-2 right-2 bg-black text-white hover:bg-accent w-6 h-6 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 cursor-pointer">
+                            <span class="monospaced-metadata text-[10px]">✕</span>
+                        </button>
+                    `;
+                    frag.appendChild(div);
+                });
+                grid.prepend(frag);
+            }
+        }
+
+        function handleImageUpload(event) {
+            const files = event.target.files;
+            if (!files.length) return;
+
+            const currentData = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+            const readers = [];
+
+            Array.from(files).forEach(file => {
+                const reader = new FileReader();
+                readers.push(new Promise(resolve => {
+                    reader.onload = (e) => resolve(e.target.result);
+                    reader.readAsDataURL(file);
+                }));
+            });
+
+            Promise.all(readers).then(results => {
+                const newData = [...currentData, ...results];
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(newData));
+                loadRefs();
+            });
+
+            // Reset input
+            event.target.value = '';
+        }
+
+        function removeRef(index) {
+            const currentData = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+            currentData.splice(index, 1);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(currentData));
+            loadRefs();
+        }
+
+        // Init
+        // We hooked this into body onload, but let's also ensure it runs if that failed
+        // window.onload = loadRefs; // Avoid overriding body onload if it exists
+    </script>
+
+
+
+    <!-- The Roadmap (Minimalist List) -->
+    <section class="max-w-7xl mx-auto space-y-px mb-20 md:mb-48 px-4 md:px-8">
+
+        <!-- FASE 01 -->
+        <div
+            class="grid md:grid-cols-12 gap-4 py-8 border-t border-accent/20 group hover:bg-accent/5 transition-colors">
+            <div class="md:col-span-2 text-[10px] text-accent/50">FASE 01</div>
+            <div class="md:col-span-4 text-2xl font-bold text-accent opacity-50">CONCEPTO</div>
+            <div class="md:col-span-4 text-[10px] text-accent/70 pt-2">DEFINICIÓN DE NARRATIVA VISUAL Y OBJETIVOS.</div>
+            <div
+                class="md:col-span-2 text-right text-[10px] text-accent border border-accent/20 px-2 py-1 self-start inline-block">
+                COMPLETADO</div>
+        </div>
+
+        <!-- FASE 02 -->
+        <div class="grid md:grid-cols-12 gap-4 py-8 border-t border-b border-accent group">
+            <div class="md:col-span-2 text-[10px] text-accent font-bold">FASE 02</div>
+            <div class="md:col-span-4 text-2xl font-bold text-accent">ESTRUCTURA</div>
+            <div class="md:col-span-4 text-[10px] text-accent pt-2">UX COMO NARRATIVA. WIREFRAMES Y DISEÑO DE INTERFAZ.
+            </div>
+            <div
+                class="md:col-span-2 text-right text-[10px] bg-accent text-black px-2 py-1 self-start inline-block font-bold">
+                EN PROGRESO</div>
+        </div>
+
+        <!-- FASE 03 -->
+        <div
+            class="grid md:grid-cols-12 gap-4 py-8 border-b border-accent/20 opacity-50 hover:opacity-100 transition-opacity">
+            <div class="md:col-span-2 text-[10px]">FASE 03</div>
+            <div class="md:col-span-4 text-2xl font-bold">OPTIMIZACIÓN</div>
+            <div class="md:col-span-4 text-[10px] pt-2">INDEXACIÓN, PALABRAS CLAVE Y RENDIMIENTO.</div>
+            <div class="md:col-span-2 text-right text-[10px] border border-accent/20 px-2 py-1 self-start inline-block">
+                PENDIENTE</div>
+        </div>
+
+        <!-- FASE 04 -->
+        <div
+            class="grid md:grid-cols-12 gap-4 py-8 border-b border-accent/20 opacity-50 hover:opacity-100 transition-opacity">
+            <div class="md:col-span-2 text-[10px]">FASE 04</div>
+            <div class="md:col-span-4 text-2xl font-bold">ROLLOUT</div>
+            <div class="md:col-span-4 text-[10px] pt-2">LANZAMIENTO OFICIAL Y MANTENIMIENTO.</div>
+            <div class="md:col-span-2 text-right text-[10px] border border-accent/20 px-2 py-1 self-start inline-block">
+                FUTURO</div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="px-4 md:px-8 py-12 border-t border-accent/20">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-[10px] text-accent/60">
+            <div class="font-bold tracking-widest">BERENJENASTUDIO</div>
+            <div>© 2026 NAAV STUDIO</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
