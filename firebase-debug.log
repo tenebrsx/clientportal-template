@@ -1,0 +1,100 @@
+[debug] [2026-01-17T15:33:03.097Z] ----------------------------------------------------------------------
+[debug] [2026-01-17T15:33:03.101Z] Command:       /Users/tenebrisx/.nvm/versions/node/v20.19.0/bin/node /Users/tenebrisx/.nvm/versions/node/v20.19.0/bin/firebase deploy
+[debug] [2026-01-17T15:33:03.101Z] CLI Version:   15.3.1
+[debug] [2026-01-17T15:33:03.101Z] Platform:      darwin
+[debug] [2026-01-17T15:33:03.101Z] Node Version:  v20.19.0
+[debug] [2026-01-17T15:33:03.101Z] Time:          Sat Jan 17 2026 11:33:03 GMT-0400 (Atlantic Standard Time)
+[debug] [2026-01-17T15:33:03.101Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-17T15:33:04.007Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-17T15:33:04.008Z] > authorizing via signed-in user (tenebrsx@gmail.com)
+[debug] [2026-01-17T15:33:04.008Z] [iam] checking project berenjenaclienteportal for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-01-17T15:33:04.008Z] Checked if tokens are valid: false, expires at: 1768596665221
+[debug] [2026-01-17T15:33:04.008Z] Checked if tokens are valid: false, expires at: 1768596665221
+[debug] [2026-01-17T15:33:04.008Z] > refreshing access token with scopes: []
+[debug] [2026-01-17T15:33:04.009Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-17T15:33:04.009Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-17T15:33:04.336Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-17T15:33:04.336Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-17T15:33:04.351Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/berenjenaclienteportal:testIamPermissions [none]
+[debug] [2026-01-17T15:33:04.351Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/berenjenaclienteportal:testIamPermissions x-goog-quota-user=projects/berenjenaclienteportal
+[debug] [2026-01-17T15:33:04.352Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/berenjenaclienteportal:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-17T15:33:04.852Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/berenjenaclienteportal:testIamPermissions 200
+[debug] [2026-01-17T15:33:04.852Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/berenjenaclienteportal:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-17T15:33:04.853Z] Checked if tokens are valid: true, expires at: 1768667583336
+[debug] [2026-01-17T15:33:04.853Z] Checked if tokens are valid: true, expires at: 1768667583336
+[debug] [2026-01-17T15:33:04.853Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/berenjenaclienteportal [none]
+[debug] [2026-01-17T15:33:04.964Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/berenjenaclienteportal, {"headers":{},"method":"GET","signal":{"reason":""}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/berenjenaclienteportal failed, reason: 
+[debug] [2026-01-17T15:33:04.964Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/berenjenaclienteportal (original: request to https://firebase.googleapis.com/v1beta1/projects/berenjenaclienteportal failed, reason: )
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2026-01-17T15:33:27.727Z] ----------------------------------------------------------------------
+[debug] [2026-01-17T15:33:27.734Z] Command:       /Users/tenebrisx/.nvm/versions/node/v20.19.0/bin/node /Users/tenebrisx/.nvm/versions/node/v20.19.0/bin/firebase deploy
+[debug] [2026-01-17T15:33:27.735Z] CLI Version:   15.3.1
+[debug] [2026-01-17T15:33:27.735Z] Platform:      darwin
+[debug] [2026-01-17T15:33:27.735Z] Node Version:  v20.19.0
+[debug] [2026-01-17T15:33:27.735Z] Time:          Sat Jan 17 2026 11:33:27 GMT-0400 (Atlantic Standard Time)
+[debug] [2026-01-17T15:33:27.735Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-17T15:33:28.498Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-17T15:33:28.498Z] > authorizing via signed-in user (tenebrsx@gmail.com)
+[debug] [2026-01-17T15:33:28.498Z] [iam] checking project berenjenaclienteportal for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-01-17T15:33:28.499Z] Checked if tokens are valid: true, expires at: 1768667583336
+[debug] [2026-01-17T15:33:28.499Z] Checked if tokens are valid: true, expires at: 1768667583336
+[debug] [2026-01-17T15:33:28.500Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/berenjenaclienteportal:testIamPermissions [none]
+[debug] [2026-01-17T15:33:28.500Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/berenjenaclienteportal:testIamPermissions x-goog-quota-user=projects/berenjenaclienteportal
+[debug] [2026-01-17T15:33:28.500Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/berenjenaclienteportal:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-17T15:33:28.723Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/berenjenaclienteportal:testIamPermissions 200
+[debug] [2026-01-17T15:33:28.723Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/berenjenaclienteportal:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-17T15:33:28.724Z] Checked if tokens are valid: true, expires at: 1768667583336
+[debug] [2026-01-17T15:33:28.724Z] Checked if tokens are valid: true, expires at: 1768667583336
+[debug] [2026-01-17T15:33:28.724Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/berenjenaclienteportal [none]
+[debug] [2026-01-17T15:33:28.730Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/berenjenaclienteportal, {"headers":{},"method":"GET","signal":{"reason":""}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/berenjenaclienteportal failed, reason: 
+[debug] [2026-01-17T15:33:28.730Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/berenjenaclienteportal (original: request to https://firebase.googleapis.com/v1beta1/projects/berenjenaclienteportal failed, reason: )
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2026-01-17T15:33:37.072Z] ----------------------------------------------------------------------
+[debug] [2026-01-17T15:33:37.076Z] Command:       /Users/tenebrisx/.nvm/versions/node/v20.19.0/bin/node /Users/tenebrisx/.nvm/versions/node/v20.19.0/bin/firebase deploy --project berenjenaclienteportal
+[debug] [2026-01-17T15:33:37.076Z] CLI Version:   15.3.1
+[debug] [2026-01-17T15:33:37.076Z] Platform:      darwin
+[debug] [2026-01-17T15:33:37.076Z] Node Version:  v20.19.0
+[debug] [2026-01-17T15:33:37.076Z] Time:          Sat Jan 17 2026 11:33:37 GMT-0400 (Atlantic Standard Time)
+[debug] [2026-01-17T15:33:37.076Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-17T15:33:37.831Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-17T15:33:37.831Z] > authorizing via signed-in user (tenebrsx@gmail.com)
+[debug] [2026-01-17T15:33:37.831Z] [iam] checking project berenjenaclienteportal for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-01-17T15:33:37.832Z] Checked if tokens are valid: true, expires at: 1768667583336
+[debug] [2026-01-17T15:33:37.832Z] Checked if tokens are valid: true, expires at: 1768667583336
+[debug] [2026-01-17T15:33:37.832Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/berenjenaclienteportal:testIamPermissions [none]
+[debug] [2026-01-17T15:33:37.832Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/berenjenaclienteportal:testIamPermissions x-goog-quota-user=projects/berenjenaclienteportal
+[debug] [2026-01-17T15:33:37.832Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/berenjenaclienteportal:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-17T15:33:38.039Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/berenjenaclienteportal:testIamPermissions 200
+[debug] [2026-01-17T15:33:38.039Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/berenjenaclienteportal:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-17T15:33:38.039Z] Checked if tokens are valid: true, expires at: 1768667583336
+[debug] [2026-01-17T15:33:38.039Z] Checked if tokens are valid: true, expires at: 1768667583336
+[debug] [2026-01-17T15:33:38.039Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/berenjenaclienteportal [none]
+[debug] [2026-01-17T15:33:38.043Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/berenjenaclienteportal, {"headers":{},"method":"GET","signal":{"reason":""}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/berenjenaclienteportal failed, reason: 
+[debug] [2026-01-17T15:33:38.043Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/berenjenaclienteportal (original: request to https://firebase.googleapis.com/v1beta1/projects/berenjenaclienteportal failed, reason: )
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2026-01-17T15:33:45.188Z] ----------------------------------------------------------------------
+[debug] [2026-01-17T15:33:45.190Z] Command:       /Users/tenebrisx/.nvm/versions/node/v20.19.0/bin/node /Users/tenebrisx/.nvm/versions/node/v20.19.0/bin/firebase projects:list
+[debug] [2026-01-17T15:33:45.191Z] CLI Version:   15.3.1
+[debug] [2026-01-17T15:33:45.191Z] Platform:      darwin
+[debug] [2026-01-17T15:33:45.191Z] Node Version:  v20.19.0
+[debug] [2026-01-17T15:33:45.191Z] Time:          Sat Jan 17 2026 11:33:45 GMT-0400 (Atlantic Standard Time)
+[debug] [2026-01-17T15:33:45.191Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-17T15:33:45.294Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-17T15:33:45.294Z] > authorizing via signed-in user (tenebrsx@gmail.com)
+[debug] [2026-01-17T15:33:45.298Z] Checked if tokens are valid: true, expires at: 1768667583336
+[debug] [2026-01-17T15:33:45.298Z] Checked if tokens are valid: true, expires at: 1768667583336
+[debug] [2026-01-17T15:33:45.299Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2026-01-17T15:33:45.328Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects?pageSize=1000, {"headers":{},"method":"GET","signal":{"reason":""}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000 failed, reason: 
+[debug] [2026-01-17T15:33:45.328Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000
+[debug] [2026-01-17T15:33:45.333Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000
+    at RetryOperation._fn (/Users/tenebrisx/.nvm/versions/node/v20.19.0/lib/node_modules/firebase-tools/lib/apiv2.js:269:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
